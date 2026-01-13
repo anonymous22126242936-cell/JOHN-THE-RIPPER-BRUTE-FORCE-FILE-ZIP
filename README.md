@@ -1,7 +1,7 @@
 
  ZIP Password Cracker with John the Ripper
 
-A simple script to automate password cracking for ZIP files using John the Ripper.
+A simple tool cracking for ZIP files using John the Ripper.
 
 Disclaimer: For educational and authorized testing purposes only.
 
