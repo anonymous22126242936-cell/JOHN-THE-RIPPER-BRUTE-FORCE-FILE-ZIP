@@ -1,16 +1,25 @@
-
- ZIP Password Cracker with John the Ripper
+<h3><center>ZIP Password Cracker with John The Ripper</h3></center>
 
 A simple tool cracking for ZIP files using John the Ripper.
 
-Disclaimer: For educational and authorized testing purposes only.
+<b> Disclaimer:</b> For educational and authorized testing purposes only.
+
 
 
 Quick Start
 
 1.  Install JohnTheRipper
     
-    ``[+] sudo apt install john    ``
+    ``
+    [+] sudo apt update
+    ``
+
+    ``
+    [+] sudo apt install john
+    ``
+
+<img width="1350" height="419" alt="image" src="https://github.com/user-attachments/assets/5b592c50-88da-4484-a8f0-f600be609366" />
+
 
 <img width="1347" height="258" alt="image" src="https://github.com/user-attachments/assets/eaa73a4e-3082-44d7-af69-35f3261b14d0" />
     
@@ -44,7 +53,7 @@ john hashes.txt [mode] [wordlist]
 4. brute force zip password using wordlists mode
 
    
-[+] ``john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt ``
+  `` [+] john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt ``
 
 <img width="1356" height="372" alt="image" src="https://github.com/user-attachments/assets/71b252bf-6d18-4af3-815b-1a17f19eca60" />
 
