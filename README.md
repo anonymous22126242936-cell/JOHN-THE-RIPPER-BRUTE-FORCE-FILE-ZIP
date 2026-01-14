@@ -9,12 +9,12 @@ Quick Start
 
 1.  Install JohnTheRipper
     
-    [+] sudo apt install john    
+    ``[+] sudo apt install john    ``
 
 2.  Run the Script
     Place your ZIP file (e.g., `secret.zip`) in the directory and run:
     
-    [+] zip2john secret.zip > hashes.txt
+    ``[+] zip2john secret.zip > hashes.txt``
     
     This uses the built-in `rockyou.txt` wordlist.
 
@@ -29,7 +29,7 @@ Modes:
 
 john hashes.txt [mode] [wordlist]
 
-[+] john --wordlist="/usr/share/wordlists/rockyou.txt hashes.txt 
+[+] ``john --wordlist="/usr/share/wordlists/rockyou.txt hashes.txt ``
 
 output :
 ``
