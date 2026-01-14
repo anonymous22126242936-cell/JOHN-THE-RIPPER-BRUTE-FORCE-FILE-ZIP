@@ -6,6 +6,8 @@ A simple tool cracking for ZIP files using John the Ripper.
 Disclaimer: For educational and authorized testing purposes only.
 
 Quick Start
+![output-john-crack](https://github.com/user-attachments/assets/83e27ce8-9605-498d-aa24-57c334492ae2)
+
 
 1.  Install JohnTheRipper
     
