@@ -5,20 +5,30 @@ A simple tool cracking for ZIP files using John the Ripper.
 
 Disclaimer: For educational and authorized testing purposes only.
 
-Quick Start
-![output-john-crack](https://github.com/user-attachments/assets/83e27ce8-9605-498d-aa24-57c334492ae2)
 
+Quick Start
 
 1.  Install JohnTheRipper
     
     ``[+] sudo apt install john    ``
 
-2.  Run the Script
+<img width="1347" height="258" alt="image" src="https://github.com/user-attachments/assets/eaa73a4e-3082-44d7-af69-35f3261b14d0" />
+    
+
+2.  Extract Hash file Zip
     Place your ZIP file (e.g., `secret.zip`) in the directory and run:
     
     ``[+] zip2john secret.zip > hashes.txt``
+
+<img width="1351" height="385" alt="image" src="https://github.com/user-attachments/assets/88dce9ed-80fe-4d49-ad49-639b9d2fc342" />
+
     
-    This uses the built-in `rockyou.txt` wordlist.
+3. Contents of the zip file
+
+   ``[+] cat hashes.txt ``
+
+   <img width="1359" height="171" alt="image" src="https://github.com/user-attachments/assets/64a2d479-e795-4a7e-b468-50402c626733" />
+
 
 Usage
 
@@ -31,19 +41,15 @@ Modes:
 
 john hashes.txt [mode] [wordlist]
 
-[+] ``john --wordlist="/usr/share/wordlists/rockyou.txt hashes.txt ``
+4. brute force zip password using wordlists mode
 
-output :
-``
-Using default input encoding: UTF-8
-Loaded 1 password hash (PKZIP [32/64])
-Will run 8 OpenMP threads
-Press 'q' or Ctrl-C to abort, almost any other key for status
-marfin12345      (secret.zip/data.txt)     
-1g 0:00:00:00 DONE (2026-01-13 21:30) 16.66g/s 273066p/s 273066c/s 273066C/s 123456..cutypie
-Use the "--show" option to display all of the cracked passwords reliably
-Session completed. 
-``
+   
+[+] ``john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt ``
+
+<img width="1356" height="372" alt="image" src="https://github.com/user-attachments/assets/71b252bf-6d18-4af3-815b-1a17f19eca60" />
+
+
+
 The password was successfully brute-forced and the password was found to be "marfin12345"
 
  How It Works
